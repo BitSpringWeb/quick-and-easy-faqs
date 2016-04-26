@@ -236,6 +236,8 @@ class Quick_And_Easy_FAQs_Public {
         $faqs_query_args = array(
             'post_type' => 'faq',
             'posts_per_page' => -1,
+            'orderby' => 'menu_order',
+            'order' => 'ASC',
         );
 
         if ( ! empty ( $filter_array ) ) {
@@ -312,6 +314,8 @@ class Quick_And_Easy_FAQs_Public {
                     $faqs_queries_array[ $query_index ] = new WP_Query( array(
                             'post_type' => 'faq',
                             'posts_per_page' => -1,
+                            'orderby' => 'menu_order',
+                            'order' => 'ASC',
                             'tax_query' => array(
                                 array (
                                     'taxonomy' => 'faq-group',
@@ -380,6 +384,8 @@ class Quick_And_Easy_FAQs_Public {
         $faqs_query_args = array(
             'post_type' => 'faq',
             'posts_per_page' => -1,
+            'orderby' => 'menu_order',
+            'order' => 'ASC',
         );
 
         if ( ! empty ( $filter_array ) ) {
@@ -436,6 +442,8 @@ class Quick_And_Easy_FAQs_Public {
                     $faqs_query = new WP_Query( array(
                             'post_type' => 'faq',
                             'posts_per_page' => -1,
+                            'orderby' => 'menu_order',
+                            'order' => 'ASC',
                             'tax_query' => array(
                                 array (
                                     'taxonomy' => 'faq-group',

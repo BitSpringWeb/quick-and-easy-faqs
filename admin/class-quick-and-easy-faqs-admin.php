@@ -115,7 +115,7 @@ class Quick_And_Easy_FAQs_Admin {
             'label'               => __( 'faq', 'quick-and-easy-faqs' ),
             'description'         => __( 'Frequently Asked Questions', 'quick-and-easy-faqs' ),
             'labels'              => apply_filters( 'qe_faq_labels', $labels),
-            'supports'            => apply_filters( 'qe_faq_supports', array( 'title', 'editor' ) ),
+            'supports'            => apply_filters( 'qe_faq_supports', array( 'title', 'editor', 'page-attributes' ) ),
             'hierarchical'        => false,
             'public'              => false,
             'show_ui'             => true,
